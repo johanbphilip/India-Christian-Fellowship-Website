@@ -1,0 +1,101 @@
+:root {
+    --deep-blue: #2C3E50;
+    --light-blue: #3498DB;
+    --soft-gold: #D4AF37;
+    --alt-white: #f8f0e3;
+    --primary-brown: #d2b48f;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 6rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: Montserrat;
+    background-color: var(--deep-blue);
+    z-index: 1000;
+}
+.header a {
+    color: white;
+    padding: 0.75rem;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 1rem;
+    a {
+        transition: all 0.3s ease;
+    }
+}
+.left-section a:hover {
+    color: var(--soft-gold);
+}
+.right-section {
+    font-weight: 900px;
+    display: flex;
+    margin-right: 1rem;
+}
+.navbar  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navlist {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+.nav-link, .dropdown-link {
+    list-style: none;
+    height: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: relative;
+    a {
+        transition: all 0.3s ease;
+    }
+}
+.nav-link a:hover {
+    color: var(--soft-gold);
+}
+
+.dropdown {
+    position: absolute;
+    margin: 0.75rem -1rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background-color: var(--deep-blue);
+}
+.dropdown-link {
+    font-size: 18px;
+    padding: 0.5rem 0.25rem;
+}
+/*need to figure out why the about dropdown is triggered even when im not directly on it*/
+.about:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.join {
+    background-color: var(--soft-gold);
+    color: var(--alt-white);
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0.5rem;
+}
+.join:hover a{
+    color: var(--deep-blue);
+}

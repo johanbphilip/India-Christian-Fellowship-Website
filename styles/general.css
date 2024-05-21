@@ -1,0 +1,17 @@
+:root {
+    --deep-blue: #2C3E50;
+    --light-blue: #3498DB;
+    --soft-gold: #D4AF37;
+    --alt-white: #f8f0e3;
+    --primary-brown: #d2b48f;
+}
+body {
+    font-family: Roboto, Montserrat, Poppins;
+    font-size: 1.15rem;
+    background-color: white;
+    color: var(--deep-blue);
+    margin: 0;
+    text-decoration: none;
+    margin-bottom: 1000px;
+}
+  

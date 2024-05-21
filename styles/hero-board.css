@@ -1,0 +1,33 @@
+:root {
+    --deep-blue: #2C3E50;
+    --light-blue: #3498DB;
+    --soft-gold: #D4AF37;
+    --alt-white: #f8f0e3;
+    --primary-brown: #d2b48f;
+}
+.hero-board {
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;  
+    padding: 4rem 2rem;
+    background-color: white;
+}
+.hero-heading {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--deep-blue);
+}
+.hero-image-container {
+    max-height: 60rem;
+    max-width: 40rem;
+    margin: 1rem;
+}
+.hero-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
