@@ -11,24 +11,23 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
     background-color: var(--deep-blue);
     z-index: 1;
     color: white;
-    div {
-        margin: 0 1rem;
-    }
+    
 }
 .first-left {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     div {
         max-width: 40rem;
     }
 }
 .first-right {
     display: flex;
+    margin: 1rem 0 1rem 1rem;
     div {
         max-height: 14rem;
         max-width: 40rem;
@@ -52,16 +51,16 @@
     font-family: Poppins;
     margin-bottom: 1rem;
 }
-.visit-us {
+.join-us {
     font-family: Montserrat;
     font-size: 1.2rem;
     background-color: var(--soft-gold);
-    padding: 0.25rem 1.1rem;
+    padding: 0.4rem 1.1rem;
     border-radius: 2rem;
     color: white;
     transition: all 0.3s ease;
     font-weight: 600;
 }
-.visit-us:hover {
+.join-us:hover {
     color: var(--deep-blue);
 }

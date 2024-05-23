@@ -86,7 +86,6 @@
 /*need to figure out why the about dropdown is triggered even when im not directly on it*/
 .about:hover .dropdown {
     opacity: 1;
-    visibility: visible;
 }
 
 .join {
