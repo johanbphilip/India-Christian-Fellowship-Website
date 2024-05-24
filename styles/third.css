@@ -4,14 +4,13 @@
     --soft-gold: #D4AF37;
     --alt-white: #f8f0e3;
     --primary-brown: #d2b48f;
-
 }
 .third-section {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: var(--alt-white);
-    padding: 5rem 2rem;
+    padding: 4rem 3rem;
 }
 .third-heading {
     font-size: 3rem;
@@ -22,7 +21,7 @@
 .third-body {
     display: flex;
     flex-direction: row;
-justify-content: center;
+    justify-content: center;
 }
 .third-left, .third-middle, .third-right {
     display: flex;
