@@ -1,17 +1,10 @@
-:root {
-    --deep-blue: #2C3E50;
-    --light-blue: #3498DB;
-    --soft-gold: #D4AF37;
-    --alt-white: #f8f0e3;
-    --primary-brown: #d2b48f;
-}
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-size: 20px;
 }
-.header {
+header {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -20,10 +13,12 @@
     left: 0;
     right: 0;
     font-family: Montserrat;
-    background-color: var(--deep-blue);
     z-index: 1000;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    /*background-color: rgba(44, 62, 80, 0.5); add this using JS so that its triggered when top is at white area*/
 }
-.header a {
+#header a {
     color: white;
     padding: 0.75rem;
 }

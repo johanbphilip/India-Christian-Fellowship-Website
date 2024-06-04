@@ -1,14 +1,8 @@
-:root {
-    --deep-blue: #2C3E50;
-    --light-blue: #3498DB;
-    --soft-gold: #D4AF37;
-    --alt-white: #f8f0e3;
-    --primary-brown: #d2b48f;
-}
 .second-section {
     display: flex;
     justify-items: space-between;
     align-items: center;
+    background-color: var(--alt-white);
     padding: 4rem 3rem;
 }
 .second-main {

@@ -1,18 +1,28 @@
 :root {
-    --deep-blue: #2C3E50;
-    --light-blue: #3498DB;
+    --deep-blue: #28343e;
     --soft-gold: #D4AF37;
-    --alt-white: #f8f0e3;
-    --primary-brown: #d2b48f;
+    --alt-white: #fffaf1;
 }
 body {
     font-family: Roboto, Montserrat, Poppins;
-    font-size: 1.15rem;
     background-color: white;
     color: var(--deep-blue);
+    font-size: 20px;
     margin: 0;
     text-decoration: none;
-    margin-bottom: 1000px;
+    margin-bottom: 2000px;
+}
+main  {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+.show {
+    opacity: 100;
+}
   

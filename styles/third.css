@@ -1,16 +1,17 @@
 :root {
-    --deep-blue: #2C3E50;
-    --light-blue: #3498DB;
+    --deep-blue: #28343e;
     --soft-gold: #D4AF37;
-    --alt-white: #f8f0e3;
-    --primary-brown: #d2b48f;
+    --alt-white: #fffaf1;
 }
 .third-section {
+    font-family: Montserrat;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: var(--alt-white);
+    align-items: center;
     padding: 4rem 3rem;
+    background-color: white;
+    z-index: 1;
+    color: var(--deep-blue);
 }
 .third-heading {
     font-size: 3rem;
@@ -18,46 +19,41 @@
     margin-bottom: 2rem;
     font-family: Montserrat;
 }
-.third-body {
+.third-main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: top;
+    justify-content: right;
+    gap: 17rem;
 }
-.third-left, .third-middle, .third-right {
+.subheading {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--soft-gold);
+    margin-bottom: 2rem;
+}
+.third-left {
     display: flex;
     flex-direction: column;
-    transition: all 0.3s ease;
-    margin: 0rem 3rem;
-    padding: 0rem 0.75rem;
+    text-align: center;
 }
-.third-left:hover, .third-middle:hover, .third-right:hover {
-    box-shadow: 0px 0px 7px var(--deep-blue);
-    border-radius: 0.5rem;
-    box-shadow: inset;
-    transform: scale(1);
+.third-timings {
+    margin: 0 0 2rem 0;
 }
-.heading-2, .times{
-    margin: 0.5rem;
-    font-family: Poppins;
-    font-size: 1.25rem;
+.mini-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
-.heading-2 {
-    font-size: 1.75rem;
+.times {
+    font-size: 1.5rem;
 }
-.learn-more {
-    font-family: Poppins;
-    font-size: 1rem;
-    margin: 1rem;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: var(--soft-gold);
-    border: 0.1rem solid var(--soft-gold);
-    border-radius: 2rem;
-    transition: all 0.3s ease;
+.third-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.learn-more:hover {
-    background-color: var(--deep-blue);
-    border-color: var(--deep-blue);
-    color: #ffffff;
-    cursor: pointer;
+
+#map {
+    height: 20rem;
+    width: 30rem;
 }

@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,11 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/general.css">
@@ -25,13 +17,11 @@
         <link rel="stylesheet" href="styles/first.css">
         <link rel="stylesheet" href="styles/second.css">
         <link rel="stylesheet" href="styles/third.css">
-        <link rel="stylesheet" href="styles/fourth.css">
+        <script type="module" src="./index.js"></script>
+
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header class="header">
+        <header id="header">
             <div class="left-section">
                 <a href="#">
                     INDIA CHRISTIAN FELLOWSHIP
@@ -41,6 +31,7 @@
                 <nav class="navbar">
                     <ul class="navlist">
                         <li class="nav-link"><a href="#">HOME</a></li>
+                        <li class="nav-link"><a href="#">I'M NEW</a></li>
                         <li class="nav-link about">
                             <a href="#">ABOUT US</a>
                             <ul class="dropdown">
@@ -61,32 +52,31 @@
                         <li class="nav-link"><a href="#">MINISTRIES</a></li>
                         <li class="nav-link"><a href="#">EVENTS</a></li>
                         <li class="nav-link"><a href="#">GIVE</a></li>
-                        <li class="nav-link join"><a href="#">JOIN US</a></li>
+                        <li class="nav-link join"><a href="#">DONATE</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section class="hero-board">
-                <h1 class="hero-heading">
-                    Faith Meets Fellowship.
-                </h1>
-                <div class="hero-image-container">
+            <section class="hero-board hidden">
                     <img class="hero-image" src="resources/images/dancing-concert-while-singer-is-performing-surrounded-with-lights.jpg" alt="crowd worshiping">
-                </div>
+                    <h1 class="hero-heading">Welcome To ICF</h1>
             </section>
-            <section class="first-section">
+            <section class="first-section hidden">
                 <div class="first-left">
                     <div>
                         <h1 class="first-heading">Sundays @ ICF</h1>
                     </div>
                     <div>
                         <p class="first-description">
-                            At ICF, we believe that church is the <strong class="first-description">ultimate</strong> form of family and fellowship. As such, we strive to ensure that every member experiences <strong class="first-description">God's Love</strong> through us. Come join us to spend in worship, learn from the word and to be edified with His childre.
+                            At ICF, we believe that church is the ultimate form of family and fellowship. As such, we strive to ensure that every member experiences God's Love through us. As a regional church that serves the Malayalee, Pentecostal community in the Greater Toronto Area, we pride ourselves in the fact that we truly embody the fellowship that is present in our name. <!--reword that last sentence-->
+                        </p>
+                        <p class="first-description">
+                            We have a place for you. Click below to learn about what to expect on a Sunday @ ICF.  
                         </p>
                     </div>
                     <div class="visit-us-container">
-                        <a class="join-us" href="#">JOIN US</a>
+                        <JOIN class="join-us" href="#">I'M NEW</a>
                     </div>
                 </div>
                 <div class="first-right">
@@ -95,7 +85,7 @@
                     </div>
                 </div>
             </section>
-            <section class="second-section">
+            <section class="second-section hidden">
                 <div class="second-main">
                     <h1 class="second-heading">
                         Who Are We?
@@ -155,65 +145,44 @@
                     </div>
                 </div>
             </section>
-            <section class="third-section">
-                <h1 class="third-heading">
-                    Sunday Service Times
-                </h1>
-                <div class="third-body">
+            <section class="third-section hidden">
+                <div>
+                    <h1 class="third-heading">Join Us</h1>
+                </div>
+                <div class="third-main">
                     <div class="third-left">
-                        <h2 class="heading-2">
-                            Sunday School
-                        </h2>
-                        <p class="times">
-                            10:00 AM - 11:00 AM
-                        </p>
-                        <a class="learn-more" href="#">Learn More</a>
-                    </div>
-                    <div class="third-middle">
-                        <h2 class="heading-2">
-                            Bible Study
-                        </h2>
-                        <p class="times">
-                            10:00 AM - 11:00 AM
-                        </p>
-                        <a class="learn-more" href="#">Learn More</a>
-
+                        <h3 class="subheading">Service Schedule</h3>
+                        <div class="third-timings">
+                            <h4 class="mini-heading">Sunday School</h4>
+                            <p class="times"> 10:00 AM - 11:00 AM</p>
+                        </div>
+                        <div class="third-timings">
+                            <h4 class="mini-heading">Bible Study</h4>
+                            <p class="times"> 10:00 AM - 11:00 AM</p>
+                        </div>
+                        <div class="third-timings">
+                            <h4 class="mini-heading">Sunday Service</h4>
+                            <p class="times"> 11:00 AM - 12:45 PM</p>
+                        </div>
+                        <a href="#"></a>
                     </div>
                     <div class="third-right">
-                        <h2 class="heading-2">
-                            Sunday Service
-                        </h2>
-                        <p class="times">
-                            11:00 AM - 12:45 PM
-                        </p>
-                        <a class="learn-more" href="#">Learn More</a>
+                        <h3 class="subheading">Location</h3>
+                        <div id="map">
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="fourth-section">
-                <h1 class="fourth-heading">
-                    Our Ministries
-                </h1>
-                <div class="ministries-main">
-                    <div class="ministries-container">
-                        Sunday School
-                    </div>
-                    <div class="ministries-container">
-                        ICF Youth
-                    </div>
-                    <div class="ministries-container">
-                        Cell Meetings
-                    </div>
-                    <div class="ministries-container">
-                        Community Outreach
-                    </div>
-                    <div class="ministries-container">
-                        Ladies Ministry
-                    </div>
-                </div>
+                <script>
+                    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+                      key: "AIzaSyBJFCaluh4Cwh1OuThWrC61198dYa2wdec",
+                      v: "weekly",
+                    });
+                </script>
             </section>
         </main>
+        <footer>
+            LOGO
+        </footer>
         
-        <script src="" async defer></script>
     </body>
 </html>

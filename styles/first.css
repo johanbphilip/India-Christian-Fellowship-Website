@@ -1,10 +1,3 @@
-:root {
-    --deep-blue: #2C3E50;
-    --light-blue: #3498DB;
-    --soft-gold: #D4AF37;
-    --alt-white: #f8f0e3;
-    --primary-brown: #d2b48f;
-}
 .first-section {
     font-family: Montserrat;
     display: flex;
@@ -12,9 +5,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 4rem 3rem;
-    background-color: var(--deep-blue);
+    background-color: white;
     z-index: 1;
-    color: white;
+    color: var(--deep-blue);
 }
 .first-left {
     display: flex;
@@ -27,10 +20,10 @@
 .first-right {
     display: flex;
     margin: 1rem 0 1rem 1rem;
-    div {
-        max-height: 14rem;
-        max-width: 40rem;
-    }
+}
+.first-image-container {
+    max-height: 20rem;
+    max-width: 40rem;
 }
 .first-image {
     object-fit: cover;
