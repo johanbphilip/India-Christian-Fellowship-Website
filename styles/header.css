@@ -18,7 +18,7 @@ header {
     transition: all 0.5s ease;
     /*background-color: rgba(44, 62, 80, 0.5); add this using JS so that its triggered when top is at white area*/
 }
-#header a {
+header a {
     color: white;
     padding: 0.75rem;
 }

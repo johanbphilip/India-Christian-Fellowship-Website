@@ -11,26 +11,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="styles/hero-board.css">
-        <link rel="stylesheet" href="styles/first.css">
-        <link rel="stylesheet" href="styles/second.css">
-        <link rel="stylesheet" href="styles/third.css">
-        <script type="module" src="./index.js"></script>
-
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/general.css">
+        <link rel="stylesheet" href="./styles/hero-board.css">
+        <link rel="stylesheet" href="./styles/first.css">
+        <link rel="stylesheet" href="./styles/second.css">
+        <link rel="stylesheet" href="./styles/third.css">
+        <link rel="stylesheet" href="./styles/filler.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        <script defer type="module" src="./index.js"></script>
+        <script>
+            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+              key: "AIzaSyBJFCaluh4Cwh1OuThWrC61198dYa2wdec",
+              v: "weekly",
+            });
+        </script>
     </head>
     <body>
         <header id="header">
             <div class="left-section">
-                <a href="#">
+                <a href="./website.html">
                     INDIA CHRISTIAN FELLOWSHIP
                 </a>
             </div>
             <div class="right-section">
                 <nav class="navbar">
                     <ul class="navlist">
-                        <li class="nav-link"><a href="#">HOME</a></li>
+                        <li class="nav-link"><a href="./website.html">HOME</a></li>
                         <li class="nav-link"><a href="#">I'M NEW</a></li>
                         <li class="nav-link about">
                             <a href="#">ABOUT US</a>
@@ -146,43 +153,98 @@
                 </div>
             </section>
             <section class="third-section hidden">
-                <div>
-                    <h1 class="third-heading">Join Us</h1>
-                </div>
-                <div class="third-main">
                     <div class="third-left">
-                        <h3 class="subheading">Service Schedule</h3>
+                        <form id="user-form" action="/" method="post" name="Prayer/Question Request Form">
+                            <h3 class="subheading">Prayer Request/Questions</h3>
+                            <div class="prayer-form-input">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe">
+                                <div class="error"></div>
+                            </div>
+                            <div class="prayer-form-input">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="user_email" placeholder="example123@gmail.com">
+                                <div class="error"></div>
+                            </div>
+                            <div class="prayer-form-input">
+                                <label for="phone_number">Telephone</label>
+                                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone_number" name="user_phone_number" placeholder="416-123-4567" required>
+                                <div class="error"></div>
+                            </div>
+                            <div class="prayer-form-input">
+                                <label for="message">Prayer Request/Question</label>
+                                <input type="text" id="message" name="user_message" placeholder="Prayer Request/Questions">
+                                <div class="error"></div>
+                            </div>
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                        <!--add this to the im new category-->
+                        <!--<h3 class="subheading">Service Schedule</h3>
                         <div class="third-timings">
-                            <h4 class="mini-heading">Sunday School</h4>
-                            <p class="times"> 10:00 AM - 11:00 AM</p>
-                        </div>
-                        <div class="third-timings">
-                            <h4 class="mini-heading">Bible Study</h4>
+                            <h4 class="mini-heading">Sunday School & Bible Study</h4>
                             <p class="times"> 10:00 AM - 11:00 AM</p>
                         </div>
                         <div class="third-timings">
                             <h4 class="mini-heading">Sunday Service</h4>
                             <p class="times"> 11:00 AM - 12:45 PM</p>
                         </div>
-                        <a href="#"></a>
+                        <a class="learn-more-join"href="#">
+                            Learn More
+                            <svg stroke="#000000" stroke-width="18" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.996 511.996" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier"><g><g><path d="M508.245,246.953L363.435,102.133c-5.001-5.001-13.099-5.001-18.099,0c-5.001,5-5.001,13.099,0,18.099l122.965,122.965 H12.8c-7.074,0-12.8,5.726-12.8,12.8c0,7.074,5.726,12.8,12.8,12.8h455.492L345.327,391.763c-5.001,5-5.001,13.099,0,18.099 c5.009,5.001,13.099,5.001,18.108,0l144.811-144.811C513.246,260.051,513.246,251.953,508.245,246.953z"></path></g></g></g>
+                            </svg>
+                        </a>   -->                 
                     </div>
                     <div class="third-right">
                         <h3 class="subheading">Location</h3>
-                        <div id="map">
-                        </div>
+                        <div id="map"></div>
+                        <p class="address">220 Bethridge Rd, Etobicoke, ON, Canada, M9W 6S3</p>
                     </div>
-                </div>
-                <script>
-                    (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-                      key: "AIzaSyBJFCaluh4Cwh1OuThWrC61198dYa2wdec",
-                      v: "weekly",
-                    });
-                </script>
             </section>
         </main>
-        <footer>
-            LOGO
+        <section class="filler hidden">
+            <a href="#"><img src="./resources/svgs/youtube.svg"></a>
+            <a href="#"><img src="./resources/svgs/facebook.svg"></a>
+            <a href="#"><img src="./resources/svgs/email.svg"></a>
+        </section>
+        <footer class="hidden">
+            <div class="footer-mini-container">
+                <h1>India Christian Fellowship</h1>
+                <div class="footer-logo-container">
+                    <img src="./resources/images/icf logo.png" class="icf-logo">
+                </div>
+            </div>
+            <div class="footer-mini-container">
+                <h1>About Us</h1>
+                <a href="#">Our Code</a>
+                <a href="#">Our Belief</a>
+                <a href="#">Our History</a>
+                <a href="#">Our Leadership</a>
+
+            </div>
+            <div class="footer-mini-container">
+                <h1>Ministries</h1>
+                <a href="#">Sunday School</a>
+                <a href="#">Youth Group</a>
+                <a href="#">Cell Meetings</a>
+                <a href="#">Community Outreach</a>
+                <a href="#">Ladies</a>
+                <a href="#">Mens</a>
+            </div>
+            <div class="footer-mini-container">
+                <h1>Others</h1>
+                <a href="#">Upcoming Events</a>
+                <a href="#">Donate</a>
+                <a href="#">Sunday Schedule</a>
+
+            </div>
+            <div class="footer-mini-container">
+                <h1>Contact Us</h1>
+            </div>
         </footer>
         
     </body>
 </html>
+<!-- TODO add a bg image to the history section so that the yellow is not needed-->

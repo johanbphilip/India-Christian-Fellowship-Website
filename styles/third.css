@@ -1,30 +1,13 @@
-:root {
-    --deep-blue: #28343e;
-    --soft-gold: #D4AF37;
-    --alt-white: #fffaf1;
-}
 .third-section {
     font-family: Montserrat;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-evenly;
     padding: 4rem 3rem;
     background-color: white;
     z-index: 1;
     color: var(--deep-blue);
-}
-.third-heading {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    font-family: Montserrat;
-}
-.third-main {
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    justify-content: right;
-    gap: 17rem;
 }
 .subheading {
     font-size: 2rem;
@@ -36,6 +19,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 .third-timings {
     margin: 0 0 2rem 0;
@@ -45,15 +29,93 @@
     margin-bottom: 0.5rem;
 }
 .times {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 .third-right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    p {
+        font-family: Poppins;
+        font-weight: 100;
+    }
+}
+.learn-more-join {
+    display: inline-block;
+    width: 12rem; 
+    height: 2rem; 
+    font-family: Poppins;
+    color: var(--deep-blue);
+    font-size: 1.25rem;
+    font-weight: 500;
+    opacity: 0.75;
+    transition: all 0.3s ease;
+    svg {
+        width: 3rem; 
+        height: 2rem;
+        display: inline-block; 
+        vertical-align: middle;
+        fill: var(--deep-blue);
+        stroke: var(--deep-blue);
+    }
+}
+.learn-more-join:hover {
+    transform: scale(1.1);
+    color: var(--soft-gold);
+    opacity: 1;
+    svg {
+        fill: var(--soft-gold);
+        stroke: var(--soft-gold);
+    }
+}
+.address {
+    font-size: 1rem;
+    font-weight: 500;
+}
+#map {
+    height: 20.5rem;
+    width: 35rem;
+    margin-bottom: 1.5rem;
+}
+#user-form {
+    width: 100%;
+}
+#user-form label {
+    font-weight: 500;
+}
+#user-form input {
+    border-radius: 1rem;
+    border: 1px solid var(--deep-blue);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color: var(--deep-blue);
+    font-size: 1rem;
+}
+#user-form input::placeholder {
+    color: var(--deep-blue);
+    opacity: 0.5;
+    font-family: Poppins;
+    font-weight: 100;
+}
+.prayer-form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    text-align: left;
+    font-family: Poppins;
+}
+.prayer-form-input input:focus {
+    outline: 0;
+}
+#user-form button {
+    width: 100%;
+    border-radius: 1.5rem;
+    border: 1px solid;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: var(--soft-gold);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
 }
 
-#map {
-    height: 20rem;
-    width: 30rem;
-}

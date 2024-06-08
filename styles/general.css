@@ -1,5 +1,5 @@
 :root {
-    --deep-blue: #28343e;
+    --deep-blue: #1e2429;
     --soft-gold: #D4AF37;
     --alt-white: #fffaf1;
 }
@@ -10,14 +10,12 @@ body {
     font-size: 20px;
     margin: 0;
     text-decoration: none;
-    margin-bottom: 2000px;
 }
 main  {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
 }
-
 .hidden {
     opacity: 0;
     transition: all 1s;
