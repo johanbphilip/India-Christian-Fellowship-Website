@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: top;
     justify-content: space-evenly;
+    gap: 2rem;
     padding: 4rem 3rem;
     background-color: white;
     z-index: 1;
