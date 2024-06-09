@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="./styles/third.css">
         <link rel="stylesheet" href="./styles/filler.css">
         <link rel="stylesheet" href="./styles/footer.css">
-        <script defer type="module" src="./scripts/index.js"></script>
+        <script defer type="module" src="./index.js"></script>
         <script>
             (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
               key: "AIzaSyBJFCaluh4Cwh1OuThWrC61198dYa2wdec",
@@ -30,23 +30,23 @@
     <body>
         <header id="header">
             <div class="left-section">
-                <a href="./website.html">
+                <a href="./index.html">
                     INDIA CHRISTIAN FELLOWSHIP
                 </a>
             </div>
             <div class="right-section">
                 <nav class="navbar">
                     <ul class="navlist">
-                        <li class="nav-link"><a href="./website.html">HOME</a></li>
+                        <li class="nav-link"><a href="./index.html">HOME</a></li>
                         <li class="nav-link"><a href="#">I'M NEW</a></li>
                         <li class="nav-link about">
                             <a href="#">ABOUT US</a>
                             <ul class="dropdown">
                                 <li class="dropdown-link">
-                                    <a href="#">OUR CODE</a>
+                                    <a href="./our-code.html">OUR CODE</a>
                                 </li>
                                 <li class="dropdown-link">
-                                    <a href="#">OUR BELIEFS</a>
+                                    <a href="">OUR BELIEFS</a>
                                 </li>
                                 <li class="dropdown-link">
                                     <a href="#">OUR HISTORY</a>
@@ -67,8 +67,11 @@
             <section class="hero-board hidden">
                     <img class="hero-image" src="resources/images/dancing-concert-while-singer-is-performing-surrounded-with-lights.jpg" alt="crowd worshiping">
                     <h1 class="hero-heading">Welcome To ICF</h1>
+                    <button id="down-arrow">
+                        <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150px" height="150px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" stroke="#ffffff" class="arrow-svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58 c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022 c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"></path> </g> </g></svg>
+                    </button>
             </section>
-            <section class="first-section hidden">
+            <section class="first-section hidden" id="next">
                 <div class="first-left">
                     <div>
                         <h1 class="first-heading">Sundays @ ICF</h1>
@@ -153,7 +156,7 @@
             </section>
             <section class="third-section hidden">
                     <div class="third-left">
-                        <form id="user-form" action="/" method="post" name="Prayer/Question Request Form">
+                        <form id="user-form" action="/" method="post" name="Prayer/Question Request Form" autocomplete="off">
                             <h3 class="subheading">Prayer Request/Questions</h3>
                             <div class="prayer-form-input">
                                 <label for="name">Name</label>
@@ -162,20 +165,20 @@
                             </div>
                             <div class="prayer-form-input">
                                 <label for="email">Email</label>
-                                <input type="text" id="email" name="user_email" placeholder="example123@gmail.com">
+                                <input type="text" id="email" name="user-email" placeholder="example123@gmail.com">
                                 <div class="error"></div>
                             </div>
                             <div class="prayer-form-input">
-                                <label for="phone_number">Telephone</label>
-                                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone_number" name="user_phone_number" placeholder="416-123-4567" required>
+                                <label for="phone-number">Telephone</label>
+                                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone-number" name="user-phone-number" placeholder="416-123-4567" required>
                                 <div class="error"></div>
                             </div>
                             <div class="prayer-form-input">
                                 <label for="message">Prayer Request/Question</label>
-                                <input type="text" id="message" name="user_message" placeholder="Prayer Request/Questions">
+                                <input type="text" id="message" name="user-message" placeholder="Prayer Request/Questions">
                                 <div class="error"></div>
                             </div>
-                            <button type="submit">SUBMIT</button>
+                            <button type="submit" class="submit-button">SUBMIT</button>
                         </form>
                         <!--add this to the im new category-->
                         <!--<h3 class="subheading">Service Schedule</h3>
@@ -204,46 +207,63 @@
             </section>
         </main>
         <section class="filler hidden">
-            <a href="#"><img src="./resources/svgs/youtube.svg"></a>
+            <a target="_blank" href="https://www.youtube.com/@icftoronto"><img src="./resources/svgs/youtube.svg"></a>
             <a href="#"><img src="./resources/svgs/facebook.svg"></a>
             <a href="#"><img src="./resources/svgs/email.svg"></a>
         </section>
         <footer class="hidden">
-            <div class="footer-mini-container">
-                <h1>India Christian Fellowship</h1>
-                <div class="footer-logo-container">
-                    <img src="./resources/images/icf logo.png" class="icf-logo">
+            <div class="footer-main">
+                <div class="footer-mini-container logo">
+                    <h1>India Christian Fellowship</h1>
+                    <div class="footer-logo-container">
+                        <img src="./resources/images/icf-logo.png" class="icf-logo">
+                    </div>
+                </div>
+                <div class="footer-mini-container">
+                    <h1>About Us</h1>
+                    <a href="#">Our Code</a>
+                    <a href="#">Our Belief</a>
+                    <a href="#">Our History</a>
+                    <a href="#">Our Leadership</a>
+    
+                </div>
+                <div class="footer-mini-container">
+                    <h1>Ministries</h1>
+                    <a href="#">Sunday School</a>
+                    <a href="#">Youth Group</a>
+                    <a href="#">Cell Meetings</a>
+                    <a href="#">Community Outreach</a>
+                    <a href="#">Ladies</a>
+                    <a href="#">Mens</a>
+                </div>
+                <div class="footer-mini-container">
+                    <h1>Others</h1>
+                    <a href="#">Upcoming Events</a>
+                    <a href="#">Donate</a>
+                    <a href="#">Sunday Schedule</a>
+    
+                </div>
+                <div class="footer-mini-container">
+                    <h1>Contact Us</h1>
+                    <div class="address-footer">
+                        <h4>Address:</h4>
+                        <p>220 Bethridge Dr, Toronto, Ontario,<br>
+                            M9W 6S3</p>
+                    </div>
+                    <div class="phone-footer">
+                        <h4>Phone:</h4>
+                        <p>416-821-9537 | 647-891-1265</p>
+                    </div>
+                    <div class="email-footer">
+                        <h4>Email:</h4>
+                        <p>icfchurch.toronto@gmail.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-mini-container">
-                <h1>About Us</h1>
-                <a href="#">Our Code</a>
-                <a href="#">Our Belief</a>
-                <a href="#">Our History</a>
-                <a href="#">Our Leadership</a>
-
-            </div>
-            <div class="footer-mini-container">
-                <h1>Ministries</h1>
-                <a href="#">Sunday School</a>
-                <a href="#">Youth Group</a>
-                <a href="#">Cell Meetings</a>
-                <a href="#">Community Outreach</a>
-                <a href="#">Ladies</a>
-                <a href="#">Mens</a>
-            </div>
-            <div class="footer-mini-container">
-                <h1>Others</h1>
-                <a href="#">Upcoming Events</a>
-                <a href="#">Donate</a>
-                <a href="#">Sunday Schedule</a>
-
-            </div>
-            <div class="footer-mini-container">
-                <h1>Contact Us</h1>
+            <div class="footer-copyright">
+                <p class="copyright">Copyright &copy; <span id="year"></span> - India Christian Fellowship. All rights reserved.</p></p>
             </div>
         </footer>
-        
     </body>
 </html>
 <!-- TODO add a bg image to the history section so that the yellow is not needed-->

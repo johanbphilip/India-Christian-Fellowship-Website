@@ -1,0 +1,57 @@
+:root {
+    --deep-blue: #1e2429;
+    --soft-gold: #D4AF37;
+    --alt-white: #fffaf1;
+}
+.purpose {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 3rem 0 3rem;
+    color: var(--deep-blue);
+    h3 {
+        font-family: Montserrat;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-family: Poppins;
+        font-size: 1rem;
+        width: 75vw;
+    }
+}
+.love-god, .love-community, .love-creation {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right-side {
+    h3 {
+        font-family: Montserrat;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-family: Poppins;
+        font-size: 1rem;
+    }
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--soft-gold);
+    border-top: 1px solid var(--soft-gold);
+}
+.image-container {
+    margin: 0 5rem 0 0;
+    padding: 0;
+    width: 20rem;
+    height: 20rem;
+}
+.image {
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+}

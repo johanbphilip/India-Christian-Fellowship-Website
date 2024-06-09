@@ -7,10 +7,16 @@ footer {
     background-color: var(--deep-blue);
     color: white;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.footer-main {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: top;
-    padding: 2rem;
+    margin-bottom: 1rem;
 }
 .footer-mini-container {
     display: flex;
@@ -19,8 +25,8 @@ footer {
     text-align: left;
 }
 .footer-mini-container h1 {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
     font-family: Montserrat;
     margin-bottom: 1rem;
 }
@@ -28,18 +34,42 @@ footer {
     text-decoration: none;
     color: white;
     margin: 0.15rem 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 100;
     font-family: Poppins;
 }
 .footer-mini-container a:hover {
     color: var(--soft-gold);
 }
+.logo {
+    align-items: center;
+}
 .footer-logo-container {
-    max-width: 20rem;
-    max-height: 20rem;
+    width: 8rem;
+    height: 100%;
+    
 }
 .icf-logo {
-    object-fit: contain;
-    height: 100%;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
+}
+.address-footer, .phone-footer, .email-footer {
+    font-family: Poppins;
+    h4 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    margin-bottom: 0.5rem;
+}
+.footer-copyright {
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 100;
+    border-top: 1px solid white;
+    padding-top: 2rem;
 }
