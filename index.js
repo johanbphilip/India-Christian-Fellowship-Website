@@ -1,4 +1,4 @@
-// ICF Map feature
+// ICF Map feature using Google Maps Javascript API
 let map;
 
 async function initMap() {
@@ -36,16 +36,46 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Header Color
-window.addEventListener("scroll", function () {
-  headerColorChanger();
-});
-function headerColorChanger () {
+window.addEventListener("scroll",() => {
   const header = document.getElementById("header");
   const scrollPosition = window.scrollY;
   const triggerHeight = 650;
-  if (scrollPosition > triggerHeight) {
+  if (scrollPosition >= triggerHeight) {
     header.style.backgroundColor = "#1e2429";
   } else {
-    header.style.backgroundColor = "transparent"
+    header.style.backgroundColor = "transparent";
   }
-}
+});
+
+//Form Submission
+document.getElementById('user-form').addEventListener('submit', (event)=> {
+  //prevents user from submitting without input
+  event.preventDefault();
+  //getting values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phoneNumber = document.getElementById('phone-number').value;
+  const message = document.getElementById('message').value;
+  // creating a form submission object
+  const formContent = {
+  name: name, 
+  email: email,
+  phoneNumber: phoneNumber,
+  message: message
+  };
+  //turning form object into a JSON object
+  const formJson = JSON.stringify(formContent);
+  // need to figure out how to submit this to a useful medium
+  console.log(formJson);
+});
+
+
+//Auto-update year in copyright
+document.getElementById('year').innerHTML = new Date().getFullYear();
+
+
+//Scroll when down arrow is clicked
+document.getElementById('down-arrow').addEventListener('click', () => {
+  const scrollPosition = window.innerHeight*0.9 ;
+  window.scrollTo({top: scrollPosition, behavior: 'smooth'});
+} );

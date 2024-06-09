@@ -1,3 +1,8 @@
+:root {
+    --deep-blue: #1e2429;
+    --soft-gold: #D4AF37;
+    --alt-white: #fffaf1;
+}
 .third-section {
     font-family: Montserrat;
     display: flex;
@@ -108,7 +113,7 @@
 .prayer-form-input input:focus {
     outline: 0;
 }
-#user-form button {
+.submit-button {
     width: 100%;
     border-radius: 1.5rem;
     border: 1px solid;
@@ -118,5 +123,10 @@
     font-size: 1rem;
     font-weight: 600;
     color: white;
+    transition: all 0.3s ease;
 }
 
+.submit-button:hover {
+    color: var(--deep-blue);
+    cursor: pointer;
+}
